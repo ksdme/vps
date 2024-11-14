@@ -5,7 +5,7 @@ services:
     image: b3log/siyuan
     command: --accessAuthCode=$SIYUAN_ACCESS_AUTH_CODE
     env_file: .env
-    enviroment:
+    environment:
       - TZ=Asia/Calcutta
     volumes:
       - siyuan:/siyuan/workspace
