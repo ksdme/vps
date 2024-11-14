@@ -21,3 +21,4 @@ networks:
 
 volumes:
   siyuan:
+    external: true
