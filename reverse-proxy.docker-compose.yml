@@ -17,6 +17,14 @@ services:
       - caddy_data:/data
     restart: unless-stopped
 
+  whoami:
+    image: traefik/whoami
+    networks:
+      - caddy
+    labels:
+      caddy: whoami.ksdme.xyz
+      caddy.reverse_proxy: "{{upstreams 80}}"
+
 networks:
   caddy:
     external: true
