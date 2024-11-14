@@ -1,5 +1,3 @@
-version: "3.7"
-
 # An instance of Caddy that works with docker labels.
 # https://github.com/lucaslorentz/caddy-docker-proxy
 services:
