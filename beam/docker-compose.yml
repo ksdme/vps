@@ -3,7 +3,7 @@ services:
     image: beam-local
     build:
       context: beam
-    command: beam --host-key-file /root/.ssh/id_beam_ed25519 --host beam.ssh.camp
+    command: beam --host-key-file /root/.ssh/id_beam_ed25519 --host beam.ssh.camp --bind-addr 0.0.0.0:2222
     restart: unless-stopped
     env_file: .env
     volumes:
