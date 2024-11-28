@@ -1,0 +1,3 @@
+[submodule "beam/beam"]
+	path = beam/beam
+	url = git@github.com:ksdme/beam.git

@@ -1,0 +1,11 @@
+services:
+  beam:
+    image: beam-local
+    build:
+      context: beam
+    command: beam --host-key-file /root/.ssh/id_beam_ed25519 --host beam.ssh.camp
+    env_file: .env
+    volumes:
+      - "/home/ksdme/.ssh/id_beam_ed25519:/root/.ssh/id_beam_ed25519:ro"
+    ports:
+      - "22:2222"
