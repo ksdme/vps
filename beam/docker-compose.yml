@@ -4,8 +4,9 @@ services:
     build:
       context: beam
     command: beam --host-key-file /root/.ssh/id_beam_ed25519 --host beam.ssh.camp
+    restart: unless-stopped
     env_file: .env
     volumes:
       - "/home/ksdme/.ssh/id_beam_ed25519:/root/.ssh/id_beam_ed25519:ro"
     ports:
-      - "22:2222"
+      - "2223:2222"
