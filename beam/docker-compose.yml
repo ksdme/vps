@@ -9,7 +9,7 @@ services:
     volumes:
       - "$HOME/.ssh/id_beam_ed25519:/root/.ssh/id_beam_ed25519:ro"
     ports:
-      - "2222:2222"
+      - "22:2222"
 
   watch:
     image: containrrr/watchtower
