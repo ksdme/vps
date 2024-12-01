@@ -7,7 +7,7 @@ services:
     labels:
       - "com.centurylinklabs.watchtower.enable=true"
     volumes:
-      - "/home/ksdme/.ssh/id_beam_ed25519:/root/.ssh/id_beam_ed25519:ro"
+      - "$HOME/.ssh/id_beam_ed25519:/root/.ssh/id_beam_ed25519:ro"
     ports:
       - "2222:2222"
 
