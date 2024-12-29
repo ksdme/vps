@@ -1,0 +1,7 @@
+ssh.camp {
+    redir https://github.com/ksdme/beam
+}
+
+beam.ssh.camp {
+    redir https://github.com/ksdme/beam
+}
