@@ -22,6 +22,10 @@ services:
 
   pages:
     image: caddy:2.9
+    command:
+      - caddy
+      - run
+      - /etc/caddy/conf/Caddyfile
     restart: unless-stopped
     cap_add:
       - NET_ADMIN
