@@ -25,6 +25,7 @@ services:
     command:
       - caddy
       - run
+      - --config
       - /etc/caddy/conf/Caddyfile
     restart: unless-stopped
     cap_add:
